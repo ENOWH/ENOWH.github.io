@@ -1,13 +1,13 @@
 ---
 title: "Linear Algebra"
-excerpt: "본문의 주요 내용을 여기에 입력하세요"
+excerpt: "선형대수 내용 정리 3Blue1Brown 참조"
 
 categories:
-  - Categories2
+  - Linear Algebra
 tags:
-  - [tag1, tag2]
+  - [Linear Algebra, 3Blue1Brown]
 
-permalink: /categories2/post-name-here-2/
+permalink: /categories2/Linear Algebra/
 
 toc: true
 toc_sticky: true
