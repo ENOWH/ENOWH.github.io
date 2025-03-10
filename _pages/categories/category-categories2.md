@@ -1,9 +1,9 @@
 ---
-title: "Categories2"
+title: "Machine Learning"
 layout: category
-permalink: /categories/categories2/
+permalink: /categories/Machine Learning/
 author_profile: true
-taxonomy: Categories2
+taxonomy: Machine Learning
 sidebar:
   nav: "categories"
 ---

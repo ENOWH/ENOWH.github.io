@@ -1,9 +1,9 @@
 ---
-title: "Categories1"
+title: "Linear Algebra"
 layout: category
-permalink: /categories/categories1/
+permalink: /categories/Linear Algebra/
 author_profile: true
-taxonomy: Categories1
+taxonomy: Linear Algebra
 sidebar:
   nav: "categories"
 ---
