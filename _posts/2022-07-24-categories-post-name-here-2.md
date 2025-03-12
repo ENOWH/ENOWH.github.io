@@ -21,7 +21,12 @@ last_modified_at: 2022-07-24
 [출처 : 3Blue1Brown]
 
 ## 선형대수 강의
-https://www.3blue1brown.com/topics/linear-algebra
+<https://www.3blue1brown.com/topics/linear-algebra>
+### 3blue1brown youtube 한국어
+<https://www.youtube.com/@3Blue1BrownKR/playlists>
+### 3blue1brown youtube
+<https://www.youtube.com/@3blue1brown/playlists>
+
 
 ### Chapter 01. Vectors, what even are they?
 
