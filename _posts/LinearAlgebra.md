@@ -13,7 +13,7 @@ toc: true
 toc_sticky: true
 
 date: 2025-03-10
-last_modified_at: 2022-07-24
+last_modified_at:
 ---
 
 # Linear Algebra
