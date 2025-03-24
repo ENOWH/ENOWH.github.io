@@ -3,11 +3,11 @@ title: "Machine Learning"
 excerpt: "공돌이의 수학정리노트 참조"
 
 categories:
-  - Machine Learning
+  - MachineLearning
 tags:
   - [Machine Learning, 머신러닝]
 
-permalink: /categories/Machine Learning/
+permalink: /categories/MachineLearning/
 
 toc: true
 toc_sticky: true

@@ -3,11 +3,11 @@ title: "Linear Algebra"
 excerpt: "선형대수 내용 정리 3Blue1Brown 참조"
 
 categories:
-  - Linear Algebra
+  - LinearAlgebra
 tags:
   - [Linear Algebra, 3Blue1Brown]
 
-permalink: /categories/Linear Algebra/
+permalink: /categories/LinearAlgebra/
 
 toc: true
 toc_sticky: true

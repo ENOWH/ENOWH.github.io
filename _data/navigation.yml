@@ -19,9 +19,9 @@ main:
 # 2022.02.15 sidebar update : simple ver.
 categories:
   - title: "Linear Algebra"
-    url: /categories/Linear Algebra/
+    url: /categories/LinearAlgebra/
   - title: "Machine Learning"
-    url: /categories/Machine Learning/
+    url: /categories/MachineLearning/
   - title: "Blog"
     url: /categories/Blog/
   - title: "자격증"
