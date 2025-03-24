@@ -7,7 +7,7 @@ categories:
 tags:
   - [Linear Algebra, 3Blue1Brown]
 
-permalink: /categories/Linear Algebra/
+permalink: /categories/LinearAlgebra/
 
 toc: true
 toc_sticky: true
