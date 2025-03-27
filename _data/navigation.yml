@@ -26,3 +26,5 @@ categories:
     url: /categories/Blog/
   - title: "자격증"
     url: /categories/자격증/
+  - title: "Django"
+    url: /categories/Django/
