@@ -7,7 +7,7 @@ categories:
 tags:
   - [Machine Learning, 머신러닝]
 
-permalink: /categories/MachineLearning/
+permalink: /categories/MachineLearning/Chapter03_MachineLearning
 
 toc: true
 toc_sticky: true
