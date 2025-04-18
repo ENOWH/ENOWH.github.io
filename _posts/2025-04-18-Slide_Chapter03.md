@@ -1,5 +1,5 @@
 ---
-title: "Chapter03 정리"
+title: "Chapter03 정리"
 excerpt: "University"
 
 categories:
