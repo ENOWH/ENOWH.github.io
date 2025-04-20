@@ -5,7 +5,7 @@ excerpt: "전자회로 Chap04 전체 흐름"
 categories:
   - MicroElectronics
 tags:
-  - [MicroElectronics, 머신러닝]
+  - [MicroElectronics]
 
 permalink: /categories/MicroElectronics/Chapter04_MicroElectronics
 
