@@ -1,5 +1,5 @@
 ---
-title: "Chapter04"
+title: "Chapter04_MicroElectronics"
 excerpt: "전자회로 Chap04 전체 흐름"
 
 categories:
