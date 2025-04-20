@@ -1,13 +1,13 @@
 ---
-title: "Chapter05_MicroElectronics"
-excerpt: "전자회로 Chap05 전체 흐름"
+title: "Chapter03_MicroElectronics"
+excerpt: "전자회로 Chap03 전체 흐름"
 
 categories:
   - MicroElectronics
 tags:
   - [MicroElectronics]
 
-permalink: /categories/MicroElectronics/Chapter05_MicroElectronics
+permalink: /categories/MicroElectronics/Chapter03_MicroElectronics
 
 toc: true
 toc_sticky: true
