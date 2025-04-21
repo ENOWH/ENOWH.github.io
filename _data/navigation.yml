@@ -17,16 +17,22 @@ main:
 
 # sidebar navigation (categories)
 # 2022.02.15 sidebar update : simple ver.
-categories:
-  - title: "Linear Algebra"
-    url: /categories/LinearAlgebra/
-  - title: "Machine Learning"
-    url: /categories/MachineLearning/
+categorie-sidebar:
+  - title: "Majority"
+    children:
+      - title: "Linear Algebra"
+        url: /categories/LinearAlgebra/
+      - title: "Machine Learning"
+        url: /categories/MachineLearning/
+      - title: "MicroElectronics"
+        url: /categories/MicroElectronics/
+      - title: "Design of Digital Systems"
+        url: /categories/DesignOfDigitalSystems
+      - title: "System Programming"
+        url: /categories/SystemProgramming
   - title: "Blog"
     url: /categories/Blog/
   - title: "자격증"
     url: /categories/자격증/
   - title: "Django"
     url: /categories/Django/
-  - title: "MicroElectronics"
-    url: /categories/MicroElectronics/
