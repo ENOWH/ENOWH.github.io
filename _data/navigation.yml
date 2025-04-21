@@ -17,7 +17,7 @@ main:
 
 # sidebar navigation (categories)
 # 2022.02.15 sidebar update : simple ver.
-categorie-sidebar:
+categories:
   - title: "Majority"
     children:
       - title: "Linear Algebra"
