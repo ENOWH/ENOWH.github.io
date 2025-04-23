@@ -1,7 +1,7 @@
 ---
 title: "Design of Digital System"
 layout: category
-permalink: /categories/DesignOfDigitalSystem/
+permalink: /categories/DDS/
 author_profile: true
 taxonomy: DesignOfDigitalSystem
 sidebar:
