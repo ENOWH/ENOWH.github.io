@@ -13,115 +13,135 @@ toc: true
 toc_sticky: true
 
 date: 2025-04-20
-last_modified_at: 2025-04-20
+last_modified_at: 2025-04-24
 ---
 
-# 🔊 Chapter 5: Bipolar Amplifiers (시험범위: 전체 페이지 기준 p.1–29)
+# 🔊 Chapter 5: Bipolar Amplifiers (시험범위: p.1–29)
 
 ---
 
 ## 🟦 5.1 General Considerations
 
-### 🌱 개념 흐름 요약
-- **BJT 증폭기**는 입력 전압에 비례하는 전류를 흐르게 하여  
-  부하 저항을 통해 증폭된 출력 전압을 생성
-- 증폭기 설계 시 고려 요소:
-  - Power dissipation
-  - Speed
-  - Noise
-  - Input/output impedance
+### 🌱 개요
+- **증폭기(Amplifier)**: 입력 신호의 전압/전류를 **확대(magnify)**하는 회로
+- BJT는 **전압으로 제어되는 전류원** 역할 → 저항과 함께 증폭기 구성 가능
 
-### ✅ 전압 증폭기의 이상적인 특성
+### ✅ 이상적인 전압 증폭기 조건
 
-| 항목 | 이상적 조건 |
-|------|--------------|
-| 입력 임피던스 | 무한대 ($\infty$) |
-| 출력 임피던스 | 0 |
+| 조건 | 설명 |
+|------|------|
+| 입력 임피던스 $Z_{in}$ | 무한대 → 이전 회로에 부하를 주지 않음 |
+| 출력 임피던스 $Z_{out}$ | 0 → 어떤 부하에도 일정한 출력을 제공 |
+
+---
+
+## 🟦 5.1 예제 문제들 (Example 5.1–5.4)
+
+- 입력 임피던스가 클수록, 출력 임피던스가 작을수록 **이득 손실 없이 전송 가능**
+
+📐 임피던스 측정 기본 원리:
+- 입력 임피던스: 출력 open 상태에서 $R_{in} = \frac{V_x}{I_x}$
+- 출력 임피던스: 입력 short 상태에서 $R_{out} = \frac{V_x}{I_x}$
+
+---
+
+### ✅ 트랜지스터 단자별 임피던스 정리
+
+| 단자 | 입력 임피던스 (기준 조건) |
+|------|----------------------------|
+| Base | $r_\pi = \frac{\beta}{g_m}$ (Emitter 접지 시) |
+| Collector | $r_o = \frac{V_A}{I_C}$ (Emitter 접지 시) |
+| Emitter | $1/g_m$ (Base 접지 시) |
 
 ---
 
 ## 🟦 5.2 Operating Point Analysis and Design
 
-### 🌱 개념 흐름 요약
-- **Biasing**이란 트랜지스터를 **active mode**에 고정시키기 위해  
-  DC 작동점을 설정하는 것
-- 적절한 바이어스 설정은 $g_m$, $r_\pi$ 등 소신호 파라미터 결정에 직접 영향
-- 바이어스 회로는 크게 3가지로 나뉜다:
-  1. Base 저항
-  2. 저항 분할
-  3. Emitter degeneration 포함
+### 🌱 개요
+
+- 트랜지스터가 **Active Mode**에서 동작하기 위해 **바이어스 설정(biasing)** 필요
+- **DC bias current**를 설정하면 $g_m$, $r_\pi$, $r_o$ 등의 소신호 파라미터 결정됨
 
 ---
 
-### ✅ Biasing 방법별 특징 정리
+### ✅ 증폭기 해석 절차
 
-#### ① Base Resistor Biasing
+1. **DC 해석**: 동작 영역(Active or Saturation), 바이어스점 설정
+2. **Small-Signal 해석**: Gain, 입력/출력 임피던스 계산
 
-- 간단한 구성: Base에 저항 $R_B$만 연결
-- 문제: $\beta$ 변화에 **매우 민감**
+📌 **중첩의 원리(superposition)** 적용:
+- 모든 DC 전원은 0으로 설정 (ac ground)
+- 입력 신호만 고려하여 해석
+
+---
+
+### ✅ Small-Signal 조건
+
+- 전류 변동량 $\Delta I_C$가 전체의 10% 이하일 때 **선형 근사** 가능
+- $g_m = \frac{I_C}{V_T}$, $r_\pi = \frac{\beta}{g_m}$, $r_o = \frac{V_A}{I_C}$ 등 활용
+
+---
+
+## 🟦 5.2 Biasing Techniques
+
+### ✅ 1. Base Resistor Biasing
+
+- 단순하지만 **$\beta$에 매우 민감**
 - 수식:
   $$
-  I_C = \beta \cdot I_B = \beta \cdot \frac{V_{CC} - V_{BE}}{R_B}
-  $$
-
-#### ② Resistive Divider Biasing
-
-- 두 저항 $R_1$, $R_2$로 분압하여 Base 전압 설정
-- $\beta$에 **덜 민감**, 더 안정적
-- $V_X = \frac{R_2}{R_1 + R_2} V_{CC}$  
-  $I_C \approx I_S \exp\left( \frac{V_X - V_{BE}}{V_T} \right)$
-
-#### ③ Emitter Degeneration Biasing
-
-- Base에 분압, Emitter에 저항 $R_E$ 삽입
-- $R_E$는 바이어스 안정성과 입력 임피던스를 모두 개선
-- 전류 관계:
-  $$
-  V_{RE} = I_E R_E \approx I_C R_E
+  I_B = \frac{V_{CC} - V_{BE}}{R_B}, \quad I_C = \beta I_B
   $$
 
 ---
 
-### ✅ Self-Biasing
+### ✅ 2. Resistive Divider Biasing
 
-- **Collector 전압을 이용해 Base 전압 생성**
-- $R_B$와 $R_C$만으로 구성 가능
+- 분압 저항 $R_1, R_2$로 Base 전압 $V_X$ 결정:
+  $$
+  V_X = \frac{R_2}{R_1 + R_2} V_{CC}
+  $$
+- $I_C = I_S e^{V_{BE}/V_T}$ 적용
+- **IB가 무시 가능할 정도로 작아야 정확도 높음**
+
+---
+
+### ✅ 3. Accounting for Base Current
+
+- $V_{BE}$가 base current $I_B$로 인해 떨어짐:
+  $$
+  I_C = I_S \exp\left(\frac{V_X - I_B R_{Thev}}{V_T}\right)
+  $$
+
+---
+
+### ✅ 4. Emitter Degeneration Biasing
+
+- Emitter에 저항 $R_E$ 추가 → **$V_{BE}$ 변화에 둔감**, $\beta$ 변화 영향 적음
+- $V_E = I_E R_E \approx I_C R_E$, $V_B = V_E + V_{BE}$
+
+---
+
+### ✅ 5. Self-Biasing
+
+- Collector 전압 $V_C$를 분압에 이용하여 Base 바이어스를 설정
 - 조건:
-  - $R_C \gg \frac{R_B}{\beta}$  
-  - $V_{CE} > V_{BE}$ 유지로 active mode 보장
+  - $R_C \gg \frac{R_B}{\beta}$
+  - $V_{CE} > V_{BE}$ → Active Mode 유지
 
 ---
 
-### ✅ Bias 설계 절차 요약
+### ✅ Biasing 정리
 
-1. 원하는 $I_C$ 선택 → $g_m$, $r_\pi$ 정해짐
-2. $V_{RE}$ 선택 (보통 1V 내외)
-3. $V_B = V_{RE} + V_{BE}$ 설정
-4. $R_1$, $R_2$ 선택 (분압 공식)
-5. $R_C$ 선택해 $V_{CE}$ 유지
-
----
-
-## 🟦 5.3 PNP Biasing Techniques (p.29)
-
-### 🌱 개념 흐름 요약
-- **pnp 바이어싱**도 npn과 동일한 원리로 적용 가능
-- 단지 **극성과 전류 방향**만 반대
-- 모든 공식은 npn 공식을 다음처럼 변환:
-  - $V_{BE} \rightarrow V_{EB}$
-  - 전류 방향 반전
-  - 회로 상단을 기준으로 분석
-
-📌 즉, **회로는 동일하게 해석 가능**, 단 **방향만 조정하면 됨**
+| 방식 | 장점 | 단점 |
+|------|------|------|
+| Base Resistor | 간단 | $\beta$ 민감 |
+| Divider | $\beta$ 무관 | 저항 정밀도 요구 |
+| With $R_E$ | 안정적, 선형성↑ | Gain 감소 가능 |
+| Self-Bias | 간단한 구성 | 조건 만족 필수 |
 
 ---
 
-## ✅ 전체 요약 정리
+## ✅ 한 줄 요약
 
-| Bias 기법 | 장점 | 단점 |
-|-----------|------|------|
-| Base Resistor | 구조 단순 | $\beta$에 매우 민감 |
-| Resistive Divider | 비교적 안정적 | 저항 변화에 민감 |
-| Emitter Degeneration | $\beta$, $V_{BE}$ 변화에 둔감 | Gain 감소 |
-| Self-Biasing | 소자 수 적음 | 설계 시 조건 만족 필요 |
-| PNP Biasing | npn과 동일 방식 | 극성 반전 고려 필요 |
+> “**트랜지스터 증폭기를 제대로 동작시키기 위해서는 Active Mode 바이어스 설정이 중요하고,  
+그 바이어스는 여러 방식(Base, Divider, $R_E$, Self)을 통해 설정할 수 있으며 각각 trade-off가 있다.**”
