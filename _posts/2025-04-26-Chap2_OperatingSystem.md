@@ -1,13 +1,13 @@
 ---
-title: "Chapter03 Operating System"
-excerpt: "Chapter03. System Programming"
+title: "Chapter02_Algorithm"
+excerpt: "Chapter02. System Programming"
 
 categories:
   - SystemProgramming
 tags:
   - [SystemProgramming]
 
-permalink: /categories/SystemProgramming/Chapter03
+permalink: /categories/SystemProgramming/Chapter02_Algorithm
 
 toc: true
 toc_sticky: true
@@ -16,7 +16,7 @@ date: 2025-04-26
 last_modified_at: 2025-04-26
 ---
 
-# Chapter 4: OS 핵심 알고리즘 및 운영체제 배경 기술
+# Chapter 2: OS 핵심 알고리즘 및 운영체제 배경 기술
 
 ## 1. 운영체제의 핵심 기술
 - 1-1. 프로세스와 스레드
@@ -59,12 +59,9 @@ last_modified_at: 2025-04-26
   - 7-2-2. 수식 및 Utilization Factor 계산
   - 7-2-3. 예제 (T1, T2, T3 주기 및 실행 시간표)
 
-## 8. 실습 계획
-- 8-1. Laboratory session syllabus
-
 ---
 
-# Chapter 4: OS 핵심 알고리즘 및 운영체제 배경 기술
+# Chapter 2: OS 핵심 알고리즘 및 운영체제 배경 기술
 
 ## 1. 운영체제의 핵심 기술
 

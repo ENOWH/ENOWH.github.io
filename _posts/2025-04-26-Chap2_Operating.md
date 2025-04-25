@@ -1,5 +1,5 @@
 ---
-title: "Chapter02"
+title: "Chapter02_Operating System"
 excerpt: "Chapter02. System Programming"
 
 categories:
@@ -7,7 +7,7 @@ categories:
 tags:
   - [SystemProgramming]
 
-permalink: /categories/SystemProgramming/Chapter02
+permalink: /categories/SystemProgramming/Chapter02_OpeartingSystem
 
 toc: true
 toc_sticky: true
@@ -16,7 +16,7 @@ date: 2025-04-26
 last_modified_at: 2025-04-26
 ---
 
-# Chapter 3: Operating System Fundamentals
+# Chapter 2: Operating System Fundamentals
 
 ## 1. 운영체제 개요
 - 1-1. 운영체제란?
@@ -62,12 +62,9 @@ last_modified_at: 2025-04-26
 - 7-2. 계층형 구조 커널
 - 7-3. 마이크로 커널 구조
 
-## 8. 실습 계획
-- 8-1. Laboratory session syllabus
-
 ---
 
-# Chapter 3: Operating System Fundamentals
+# Chapter 2: Operating System Fundamentals
 
 ## 1. 운영체제 개요
 
